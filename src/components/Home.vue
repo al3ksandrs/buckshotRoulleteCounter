@@ -75,6 +75,7 @@ export default {
       <p class="p white">%</p>
     </div>
   </div>
+  <p class="p darkgray disc flex">Discord: aleksandrss</p>
 </template>
 
 <style scoped>
@@ -158,6 +159,16 @@ export default {
 
 .white{
   color: whitesmoke;
+}
+
+.darkgray{
+  color: #757575;
+}
+
+.disc{
+    position: absolute;
+  bottom: 1px;
+  left: 1.3em;
 }
 
 </style>
