@@ -104,6 +104,7 @@ export default {
   background: transparent;
   color: white;
   height: 1.5em;
+  border: none;
   width: 1.5em;
   font-size: 40px;
 }
@@ -121,6 +122,7 @@ export default {
   color: white;
   font-size: 20px;
   height: 3em;
+  border: none;
   width: 5em;
   align-self: center;
   margin-top: 2em;
