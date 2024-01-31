@@ -52,7 +52,7 @@ export default {
         <div class="">
           <button @click="increaseLiveShot" class="add-button center">+</button>
           <div class="flex center">
-            <input v-model="liveShots" class="number-field live"></input>
+            <input type="number" v-model="liveShots" class="number-field live"></input>
           </div>
           <button @click="decreaseLiveShot" class="add-button center">-</button>
         </div>
@@ -62,7 +62,7 @@ export default {
         <div class="">
           <button @click="increaseBlankShot" class="add-button center">+</button>
           <div class="flex center">
-            <input v-model="blankShots" class="number-field blank"></input>
+            <input type="number" v-model="blankShots" class="number-field blank"></input>
           </div>
           <button @click="decreaseBlankShot" class="add-button center">-</button>
         </div>
