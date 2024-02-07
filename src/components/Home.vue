@@ -7,8 +7,8 @@ export default {
       blankShots: 0,
     }
   },
-  computed:{
-    liveShotChance(){
+  computed: {
+    liveShotChance() {
       if (this.liveShots + this.blankShots === 0) {
         return 0;
       }
@@ -19,24 +19,24 @@ export default {
       return Number.isInteger(chance) ? chance.toFixed(0) : chance.toFixed(2);
     },
   },
-  methods:{
-    increaseLiveShot(){
+  methods: {
+    increaseLiveShot() {
       this.liveShots++;
     },
-    decreaseLiveShot(){
-      if(this.liveShots <= 0){
+    decreaseLiveShot() {
+      if (this.liveShots <= 0) {
         this.liveShots = 0
       } else this.liveShots--;
     },
-    increaseBlankShot(){
+    increaseBlankShot() {
       this.blankShots++;
     },
-    decreaseBlankShot(){
-      if(this.blankShots <= 0){
+    decreaseBlankShot() {
+      if (this.blankShots <= 0) {
         this.blankShots = 0
       } else this.blankShots--;
     },
-    resetCounters(){
+    resetCounters() {
       this.blankShots = 0;
       this.liveShots = 0;
     }
@@ -84,23 +84,23 @@ export default {
   display: flex;
 }
 
-.column{
+.column {
   flex-direction: column;
 }
 
-.center{
+.center {
   align-self: center;
 }
 
-.live{
+.live {
   color: red;
 }
 
-.blank{
+.blank {
   color: lightblue;
 }
 
-.add-button{
+.add-button {
   background: transparent;
   color: white;
   height: 1.5em;
@@ -109,15 +109,15 @@ export default {
   font-size: 40px;
 }
 
-.add-button:hover{
+.add-button:hover {
   color: red;
 }
 
-.add-button:active{
+.add-button:active {
   color: darkred;
 }
 
-.reset-button{
+.reset-button {
   background: transparent;
   color: white;
   font-size: 20px;
@@ -128,15 +128,15 @@ export default {
   margin-top: 2em;
 }
 
-.reset-button:hover{
+.reset-button:hover {
   color: red;
 }
 
-.reset-button:active{
+.reset-button:active {
   color: darkred;
 }
 
-.number-field{
+.number-field {
   background: transparent;
   text-align: center;
   border: none;
@@ -145,31 +145,31 @@ export default {
   font-size: 40px;
 }
 
-.container1{
+.container1 {
   width: 10em;
   justify-content: space-between;
 }
 
-.place-center{
+.place-center {
   place-items: center;
 }
 
-.live-shot-chance{
+.live-shot-chance {
   color: red;
   margin-inline: 5px;
 }
 
-.white{
+.white {
   color: whitesmoke;
 }
 
-.darkgray{
+.darkgray {
   color: #757575;
 }
 
-.disc{
-    position: absolute;
-  bottom: 1px;
+.disc {
+  position: absolute;
+  bottom: 5px;
   left: 1.3em;
 }
 
